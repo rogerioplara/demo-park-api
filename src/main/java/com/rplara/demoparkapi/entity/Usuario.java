@@ -27,7 +27,7 @@ public class Usuario implements Serializable {
     // o parâmetro enumtype.string define o enum com a string. enumtype.ordinal define como índices
     @Enumerated(EnumType.STRING)
     @Column(name="role", nullable = false, length = 20)
-    private Role role;
+    private Role role = Role.ROLE_CLIENTE;
 
     // processo de auditoria
     @Column(name = "data_criacao")
